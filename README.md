@@ -42,4 +42,14 @@ STEP 3: Add the permissions in the same file above the <application>:
   <uses-sdk
             android:minSdkVersion="16"
             android:targetSdkVersion="23" />
+``` 
+
+STEP 5: Copy the App.js file from the Driver folder and replace with the existing one. Copy the helper.js file to the grabDriver folder. 
+
+STEP 6: Run the app using: 
 ```
+react-native run-android 
+``` 
+
+<b>SOLUTIONS - TO SOME ERROR THAT MIGHT OCCUR</b> 
+
