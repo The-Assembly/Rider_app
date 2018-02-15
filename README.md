@@ -77,5 +77,3 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 if not then add the sdk_path/tools and sdk_path/platform-tools to path  
 
 6. cannot find symbol new MapsPackage() in MainApplication --> You need to add import com.airbnb.android.react.maps.MapsPackage; to your MainApplication.java file.
-
-3. 
