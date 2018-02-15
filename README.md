@@ -44,12 +44,17 @@ STEP 3: Add the permissions in the same file above the <application>:
             android:targetSdkVersion="23" />
 ``` 
 
-STEP 5: Copy the App.js file from the Driver folder and replace with the existing one. Copy the helper.js file to the grabDriver folder. 
+STEP 5: Copy the App.js file from the Driver folder and replace with the existing one (make sure to change the google maps API key). Copy the helper.js file to the grabDriver folder. 
 
 STEP 6: Run the app using: 
 ```
 react-native run-android 
 ``` 
 
-<b>SOLUTIONS - TO SOME ERROR THAT MIGHT OCCUR</b> 
+<b>SOLUTIONS - TO SOME ERRORS THAT MIGHT OCCUR</b>  
 
+1. remove @override from
+C:\Users\The Assembly\passenger\node_modules\react-native-google-place-picker\android\src\main\java\com\reactlibrary\RNGooglePlacePickerPackage.java:20: 
+
+2. Could not find or load main class org.gradle.wrapper.GradleWrapperMain react native - replace android/gradle/wrapper/gradle-wrapper.jar file
+ /java.util.concurrent.ExecutionException: com.android.ide.common.process.ProcessException: - replace resources file in android
