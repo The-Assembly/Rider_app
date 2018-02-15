@@ -22,13 +22,12 @@ react-native link react-native-maps
 STEP 2: Create a Google project, get an API key from the [ a Google developer console](https://console.cloud.google.com/), and enable the Google Maps Android API,  Google Maps Geocoding API, Google Places for Android API.   
     
    a. Open the android\app\src\main\AndroidManifest.xml file in your project directory. Under the <application> tag, add a <meta-data> containing the API key.  
-    ```
+   
     <application>
         <meta-data
           android:name="com.google.android.geo.API_KEY"
           android:value="YOUR GOOGLE SERVER API KEY"/>
     </application>
-    ``` 
 
 STEP 3: 
 
