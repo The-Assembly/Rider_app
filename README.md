@@ -54,7 +54,20 @@ react-native run-android
 <b>SOLUTIONS - TO SOME ERRORS THAT MIGHT OCCUR</b>  
 
 1. remove @override from
-C:\Users\The Assembly\passenger\node_modules\react-native-google-place-picker\android\src\main\java\com\reactlibrary\RNGooglePlacePickerPackage.java:20: 
+C:\Users\The Assembly\passenger\node_modules\react-native-google-place-picker\android\src\main\java\com\reactlibrary\RNGooglePlacePickerPackage.java:20: --> remove the @override from the package and module file at line 20
 
 2. Could not find or load main class org.gradle.wrapper.GradleWrapperMain react native - replace android/gradle/wrapper/gradle-wrapper.jar file
- /java.util.concurrent.ExecutionException: com.android.ide.common.process.ProcessException: - replace resources file in android
+ /java.util.concurrent.ExecutionException: com.android.ide.common.process.ProcessException: - replace resources file in android 
+ 
+3. Set JAVA_HOME to jdk path for environment variables
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+4. Set ANDROID_HOME to android sdk path (get from the sdk manager) 
+
+5. Could not delete path.. - cd android && ./gradlew clean or just gradlew clean
+ / looking for index.android.js : npm start -- --reset-cache and reopen the terminal
+if not then add the sdk_path/tools and sdk_path/platform-tools to path  
+
+6. cannot find symbol new MapsPackage() in MainApplication --> You need to add import com.airbnb.android.react.maps.MapsPackage; to your MainApplication.java file.
+
+3. 
