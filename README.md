@@ -3,6 +3,11 @@
 Follow the steps to create a ride sharing app both for the passenger and driver. </br> 
 To view the presenation slides, click slides </br> 
 
+<b> PART 0 - Prerequisites </b>  
+
+STEP 1: Download android studio and make sure you have the right tools needed as mentioned below:
+
+
 <b> PART 1 - Creating the driver side app </b>  
 
 STEP 1: Setting up the environment:  
