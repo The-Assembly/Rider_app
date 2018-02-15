@@ -23,10 +23,10 @@ STEP 2: Create a Google project, get an API key from the [ a Google developer co
     
    a. Open the android\app\src\main\AndroidManifest.xml file in your project directory. Under the <application> tag, add a <meta-data> containing the API key.  
     ``` 
-    <application>
-        <meta-data
-          android:name="com.google.android.geo.API_KEY"
-          android:value="YOUR GOOGLE SERVER API KEY"/>
+   <application> </br>
+   <meta-data </br>
+   android:name="com.google.android.geo.API_KEY" </br>
+          android:value="YOUR GOOGLE SERVER API KEY"/> /br>
     </application> 
     ``` 
 
