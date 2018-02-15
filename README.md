@@ -19,7 +19,7 @@ npm install --save pusher-js react-native-maps react-native-geocoding
 react-native link react-native-maps
 ```  
 
-STEP 2: Create a Google project, get an API key from the [https://console.cloud.google.com/]Google developer console , and enable the Google Maps Android API,  Google Maps Geocoding API, Google Places for Android API.  
+STEP 2: Create a Google project, get an API key from the [ a Google developer console](https://console.cloud.google.com/), and enable the Google Maps Android API,  Google Maps Geocoding API, Google Places for Android API.  
 
 STEP 3: 
 
