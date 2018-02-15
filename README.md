@@ -30,13 +30,16 @@ STEP 2: Create a Google project, get an API key from the [ a Google developer co
     </application>
 
 STEP 3: Add the permissions in the same file above the <application>: 
-   
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+``` 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
+```
  
  
  STEP 4: Ensure the android studio sdk version is 23: 
- <uses-sdk
+ 
+ ```
+  <uses-sdk
             android:minSdkVersion="16"
             android:targetSdkVersion="23" />
-
+```
