@@ -6,7 +6,7 @@ To view the presenation slides, click slides </br>
 <b> PART 0 - Prerequisites </b>  
 
 STEP 1: Download android studio and make sure you have the right tools needed as mentioned below:
-![Alt text](https://www.google.ae/search?safe=strict&q=Software+development+kit&tbm=isch&tbs=simg:CAQSlQEJIRfKtrcdyXYaiQELEKjU2AQaAggKDAsQsIynCBpiCmAIAxIo5gfsAosT_1hK9Hb8d9QfwB-8H9wfIP8k_14T2NN443yjaLN8s2yz-QNxowP8X-_1rv-_1cPFAMueJZoEJYrjapTJNWuuWU0_1o60eRdi3EsQ-0VzWuG7rNf_10-E5LIAQMCxCOrv4IGgoKCAgBEgR_1lTIfDA&sa=X&ved=0ahUKEwiu7bzg2ajZAhULtBQKHc6EDGsQwg4IJCgA&biw=1439&bih=725#imgrc=RX14RXvLQ8gEOM: "Optional Title")
+![Alt text](https://blog.pusher.com/creating-ride-booking-app-react-native-pusher/ "Optional Title")
 
 <b> PART 1 - Creating the driver side app </b>  
 
