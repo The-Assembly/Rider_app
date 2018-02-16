@@ -189,11 +189,11 @@ dependencies {
    compile project(':react-native-maps')
    ```
  
- STEP 8: Start by opening the index.android.js file and replace the default code with the following:
+ STEP 8: Start by opening the index.js file and replace the default code with the following:
  ```
  import { AppRegistry } from 'react-native';
     import App from './App';
-    AppRegistry.registerComponent('grabClone', () => App);
+    AppRegistry.registerComponent('passenger', () => App);
  ```
  
 STEP 9: Copy the App.js file from the passenger folder and replace with the existing one (make sure to change the google maps API key).
