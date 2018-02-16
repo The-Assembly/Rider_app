@@ -203,7 +203,7 @@ STEP 10: Go ahead and connect your Android device to your computer and run the f
 react-native run-android 
 ```
 
-<b> Part 4 - Setting up Genymotion <b/>
+<b> Part 4 - Setting up Genymotion </b>
 
 Genymotion is a multi-platform Android emulator that runs on top of VirtualBox to provide you better performance than the standard Android Virtual Device emulator and it’s free for personal use. 
 
