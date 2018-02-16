@@ -43,7 +43,7 @@ c. React Native requires a recent version of the Java SE Development Kit (JDK). 
 STEP 1: Setting up the environment:  
    a. To create the folder for the app, run the command in the terminal:
 ``` 
-react-native init grabDriver
+react-native init driver
 ```   
 
    b. Installing the nescessary dependencies: 
@@ -77,11 +77,18 @@ STEP 3: Add the permissions in the same file above the <application>:
   <uses-sdk
             android:minSdkVersion="16"
             android:targetSdkVersion="23" />
-``` 
+```  
 
-STEP 5: Copy the App.js file from the Driver folder and replace with the existing one (make sure to change the google maps API key). Copy the helper.js file to the grabDriver folder. 
+STEP 5: Start by opening the index.js file and replace the default code with the following: 
+```
+import { AppRegistry } from 'react-native';
+    import App from './App';
+    AppRegistry.registerComponent('driver', () => App); 
+ ```
 
-STEP 6: Run the app using: 
+STEP 6: Copy the App.js file from the Driver folder and replace with the existing one (make sure to change the google maps API key). Copy the helper.js file to the grabDriver folder. 
+
+STEP 7: Run the app using: 
 ```
 react-native run-android 
 ``` 
@@ -110,16 +117,18 @@ if not then add the sdk_path/tools and sdk_path/platform-tools to path
  
  STEP 1: Go ahead and create a new app: 
  ```
- react-native init grabClone 
+ react-native init passenger 
  ```
  
- STEP 2: You’d also need to install the same libraries as the driver app plus a couple more: 
+ STEP 2: You’d also need to install the same libraries as the driver app plus a couple more. Also linking them to react native: 
  ```
  npm i react-native-google-places --save
  
 react-native link react-native-google-places
 
- npm install --save pusher-js react-native-geocoding github:geordasche/react-native-google-place-picker react-native-loading-spinner-overlay react-native-maps 
+ npm install --save pusher-js react-native-geocoding github:geordasche/react-native-google-place-picker react-native-loading-spinner-overlay react-native-maps  
+ 
+ react-native link react-native-maps
  ```  
  
  STEP 3: In your AndroidManifest.xml file, request location permissions and add your API key in a meta-data tag (ensure you are within the <application> tag as follows: 
@@ -134,18 +143,13 @@ react-native link react-native-google-places
 	...
 </application> 
  ```
-	
-STEP 4: In the command line, run the following command: 
-```
-react-native link react-native-google-places 
-```
 
-STEP 5: open the android/app/src/main/java/com/grabClone/MainApplication.java file and add the following below the last import: 
+STEP 4: open the android/app/src/main/java/com/passenger/MainApplication.java file and add the following below the last import: 
 ```
 import com.reactlibrary.RNGooglePlacePickerPackage; 
 ```
 
-STEP 6: Add the library that you just imported under the getPackages() function. While you’re there, also make sure that the MapsPackage() is listed as well.
+STEP 5: Add the library that you just imported under the getPackages() function. While you’re there, also make sure that the MapsPackage() is listed as well.
 ```
 protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
@@ -156,7 +160,7 @@ protected List<ReactPackage> getPackages() {
     } 
  ``` 
  
- STEP 7: Next, open the android/settings.gradle file and add these right above the include ':app' directive: 
+ STEP 6: Next, open the android/settings.gradle file and add these right above the include ':app' directive: 
  ```
  include ':react-native-google-place-picker'
     project(':react-native-google-place-picker').projectDir = new File(rootProject.projectDir,         '../node_modules/react-native-google-place-picker/android') 
@@ -167,7 +171,7 @@ protected List<ReactPackage> getPackages() {
     project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/lib/android') 
 ```
  
-STEP 8: Next, open the android/app/build.gradle file and add the following under the dependencies: 
+STEP 7: Next, open the android/app/build.gradle file and add the following under the dependencies: 
 ```
 dependencies {
       compile project(':react-native-google-place-picker') // <- add this
@@ -178,6 +182,8 @@ dependencies {
    compile project(':react-native-maps')
    ```
  
- STEP 9: 
+ STEP 8: Start by opening the index.android.js file and replace the default code with the following:
+ ```
+ 
 
 
