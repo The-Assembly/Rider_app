@@ -203,5 +203,49 @@ STEP 10: Go ahead and connect your Android device to your computer and run the f
 react-native run-android 
 ```
 
+<b> Part 4 - Setting up Genymotion <b/>
+
+Genymotion is a multi-platform Android emulator that runs on top of VirtualBox to provide you better performance than the standard Android Virtual Device emulator and it’s free for personal use. 
+
+**LINK:** https://www.genymotion.com/
+
+STEP 1: You need to make an account, and sign in to be able to download the trial version. After signing in, navigate to **Downloads** on top right orner of the sreen, right next to your avatar.
+
+STEP 2: In the downloads page, scroll down to the bottom of the page and and click **get Genymotion personal version**. When you get to the download page, download the version without Virtual box. It should start downloading immediately after that.<br/>  
+
+![Download](https://user-images.githubusercontent.com/32713072/36333268-3c5ccb32-138f-11e8-8346-7022d4b5db8f.png)
+
+STEP 3: Download oracle virtual box from <a href="https://www.virtualbox.org/wiki/Downloads"> here </a>.
+
+STEP 4: Next right click on the Genymotion icon, and under "Run with graphic processor", select High performance (NVIDIA) processor, the name of your graphic processor varies with what you have installed on your system, in our case it's Nvidia. 
+
+STEP 5: To set up a virtual device you need to first login to the genymotion account that you previously created. After login in, you will get an option to install your first virtual machine.
+
+STEP 6: Select **"Google Nexus 5X - 6.0.0 - API 23 - 1080 X1920"** virtual machine, and wait for it to download.
+
+STEP 7: After the virtual machine is done downloading, select the virtual machine and press start *(Sometimes you might get some error while loading in the virtual machine, make sure you have the recent version of virtual box downloaded and your virtualisation is turned on. To check how to set up the virtualisation through the bios click <a href="https://m.me/hiponcho"> here </a> for windows 10).*
+
+STEP 8: Now that you have set up your virtual box, you need to install the google play services so that we could enable google maps for setting up either a driver/passanger for testing. The newer version of Genymotion already has opengapps installed, check the emulator UI in the top right corner, there is a lock icon with GAPPS written right below with a tick mark, suggesting that it is enabled. In case you have an older version, follow these instructions to install google play services:  
+
+- Visit opengapps.org 
+- Select x86 as platform.
+- Choose the Android version corresponding to your virtual device. (6.0.0 in our case)
+- Select nano as variant.
+- Download the zip file.
+- Drag & Drop the zip installer in a new Genymotion virtual device.
+
+STEP 9: Now that you have google play installed, you will be able to the access the map functionality. Its now time to compile the app and install it on genymotion. Make sure the virtual machine is open and on the command prompt depending on which app you want to install (driver/passanger), go to the designated directory in the command prompt. Next, type:
+```
+react-native run-android
+```
+
+STEP 10: Once the app runs you’ll see a blank screen. This is normal because the app needs a location in order to render something. You can do that by clicking on “GPS” located on the upper right-side of the emulator UI then enable GPS. You can also click on the map button and select a specific location if you want:<br/>
+
+![map](https://user-images.githubusercontent.com/32713072/36334119-752ef638-1394-11e8-8af2-c65252538777.png)
+
+STEP 11: Once you’ve selected a location, the map UI in the app should show the same location that you selected.
+
+
+
 
 
