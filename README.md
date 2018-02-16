@@ -196,7 +196,7 @@ dependencies {
     AppRegistry.registerComponent('passenger', () => App);
  ```
  
-STEP 9: Copy the App.js file from the passenger folder and replace with the existing one (make sure to change the google maps API key).
+STEP 9: Copy the App.js file from the passenger folder and replace with the existing one (make sure to change the google maps API key). Copy the helper.js file to the passenger folder.
 
 STEP 10: Go ahead and connect your Android device to your computer and run the following command:
 ```
