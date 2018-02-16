@@ -103,4 +103,22 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
  / looking for index.android.js : npm start -- --reset-cache and reopen the terminal
 if not then add the sdk_path/tools and sdk_path/platform-tools to path  
 
-6. cannot find symbol new MapsPackage() in MainApplication --> You need to add import com.airbnb.android.react.maps.MapsPackage; to your MainApplication.java file.
+6. cannot find symbol new MapsPackage() in MainApplication --> You need to add import com.airbnb.android.react.maps.MapsPackage; to your MainApplication.java file. 
+
+<b> PART 3 - Creating the Passenger side app 
+ 
+ STEP 1: Go ahead and create a new app: 
+ ```
+ react-native init grabClone 
+ ```
+ 
+ STEP 2: You’d also need to install the same libraries as the driver app plus a couple more: 
+ ```
+ npm i react-native-google-places --save
+ 
+react-native link react-native-google-places
+
+ npm install --save pusher-js react-native-geocoding github:geordasche/react-native-google-place-picker react-native-loading-spinner-overlay react-native-maps 
+ ``` 
+ 
+ STEP 3: 
