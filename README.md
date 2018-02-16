@@ -9,7 +9,33 @@ STEP 1: Download android studio and make sure you have the right tools needed as
 ![Alt text](https://d2mxuefqeaa7sj.cloudfront.net/s_6E04D0395F3E9633E1AA8A9CFF9F8EA297AF4AA1392D072366B2CFB9DE43A3C7_1500610476380_Screen+Shot+2017-07-20+at+3.34.11+PM.png "Optional Title") 
 
 ![Alt text](https://blog.pusher.com/wp-content/uploads/2017/08/creating-ride-booking-app-react-native-pusher-sdk-tools.png
- "Optional Title") 
+ "Optional Title")  
+ 
+ STEP 2: <b>Installing dependencies</b> 
+WINDOWS USER: 
+a. Open an Administrator Command Prompt (right click Command Prompt and select "Run as Administrator"), then run the following command: 
+```
+choco install -y nodejs.install python2 jdk8 
+``` 
+
+b. Install the React Native command line interface: 
+```
+npm install -g react-native-cli 
+```
+
+MAC OS USERS: 
+a. Run the following commands in a Terminal after installing Homebrew:  
+```
+brew install node
+brew install watchman
+``` 
+
+b. Install the React Native command line interface:  
+```
+npm install -g react-native-cli
+``` 
+c. React Native requires a recent version of the Java SE Development Kit (JDK). Download and install JDK 8 or newer if needed. http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
 
 <b> PART 1 - Creating the driver side app </b>  
 
