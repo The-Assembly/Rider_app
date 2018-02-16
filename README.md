@@ -35,7 +35,9 @@ b. Install the React Native command line interface:
 ```
 npm install -g react-native-cli
 ``` 
-c. React Native requires a recent version of the Java SE Development Kit (JDK). Download and install JDK 8 or newer if needed. http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+c. React Native requires a recent version of the Java SE Development Kit (JDK). Download and install JDK 8 or newer if needed. http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 
+
+STEP 3: Install git. Follow the steps here: https://gist.github.com/derhuerst/1b15ff4652a867391f03
 
 
 <b> PART 1 - Creating the driver side app </b>  
@@ -194,7 +196,7 @@ dependencies {
     AppRegistry.registerComponent('grabClone', () => App);
  ```
  
-STEP 9: Copy the App.js file from the passenger folder and replace with the existing one (make sure to change the google maps API key). Copy the helper.js file to the passenger folder.  
+STEP 9: Copy the App.js file from the passenger folder and replace with the existing one (make sure to change the google maps API key).
 
 STEP 10: Go ahead and connect your Android device to your computer and run the following command:
 ```
