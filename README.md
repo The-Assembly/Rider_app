@@ -217,9 +217,9 @@ STEP 2: In the downloads page, scroll down to the bottom of the page and and cli
 
 STEP 3: Download oracle virtual box from <a href="https://www.virtualbox.org/wiki/Downloads"> here </a>.
 
-STEP 4: Next right click on the Genymotion icon, and under "Run with graphic processor", select High performance (NVIDIA) processor, the name of your graphic processor varies with what you have installed on your system, in our case it's Nvidia. 
+STEP 4: Next, right click on the Genymotion icon, and under "Run with graphic processor", select High performance (NVIDIA) processor, the name of your graphic processor varies with what you have installed on your system, in our case it's Nvidia. 
 
-STEP 5: To set up a virtual device you need to first login to the genymotion account that you previously created. After login in, you will get an option to install your first virtual machine.
+STEP 5: To set up a virtual device, you need to first login to the genymotion account that you previously created. After login in, you will get an option to install your first virtual machine.
 
 STEP 6: Select **"Google Nexus 5X - 6.0.0 - API 23 - 1080 X1920"** virtual machine, and wait for it to download.
 
@@ -234,7 +234,7 @@ STEP 8: Now that you have set up your virtual box, you need to install the googl
 - Download the zip file.
 - Drag & Drop the zip installer in a new Genymotion virtual device.
 
-STEP 9: Now that you have google play installed, you will be able to the access the map functionality. Its now time to compile the app and install it on genymotion. Make sure the virtual machine is open and on the command prompt depending on which app you want to install (driver/passanger), go to the designated directory in the command prompt. Next, type:
+STEP 9: Now, you will be able to the access the map functionality through google maps. Its now time to compile the app and install it on genymotion. Make sure the virtual machine is open and on the command prompt depending on which app you want to install (driver/passanger), go to the designated directory in the command prompt. Next, type:
 ```
 react-native run-android
 ```
