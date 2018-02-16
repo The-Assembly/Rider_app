@@ -211,7 +211,7 @@ Genymotion is a multi-platform Android emulator that runs on top of VirtualBox t
 
 STEP 1: You need to make an account, and sign in to be able to download the trial version. After signing in, navigate to **Downloads** on top right orner of the sreen, right next to your avatar.
 
-STEP 2: In the downloads page, scroll down to the bottom of the page and and click **get Genymotion personal version**. When you get to the download page, download the version without Virtual box. It should start downloading immediately after that.<br/>  
+STEP 2: In the downloads page, scroll down to the bottom of the page and and click **"get Genymotion personal version"**. When you get to the download page, download the version without Virtual box. It should start downloading immediately after that.<br/>  
 
 ![Download](https://user-images.githubusercontent.com/32713072/36333268-3c5ccb32-138f-11e8-8346-7022d4b5db8f.png)
 
