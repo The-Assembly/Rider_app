@@ -11,8 +11,8 @@ STEP 1: Download android studio and make sure you have the right tools needed as
 ![Alt text](https://blog.pusher.com/wp-content/uploads/2017/08/creating-ride-booking-app-react-native-pusher-sdk-tools.png
  "Optional Title")  
  
- STEP 2: <b>Installing dependencies</b> 
-WINDOWS USER: 
+ STEP 2: <b>Installing dependencies</b> </br>
+WINDOWS USER: </br>
 a. Open an Administrator Command Prompt (right click Command Prompt and select "Run as Administrator"), then run the following command: 
 ```
 choco install -y nodejs.install python2 jdk8 
@@ -23,7 +23,7 @@ b. Install the React Native command line interface:
 npm install -g react-native-cli 
 ```
 
-MAC OS USERS: 
+MAC OS USERS: </br>
 a. Run the following commands in a Terminal after installing Homebrew:  
 ```
 brew install node
