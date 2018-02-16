@@ -105,7 +105,8 @@ if not then add the sdk_path/tools and sdk_path/platform-tools to path
 
 6. cannot find symbol new MapsPackage() in MainApplication --> You need to add import com.airbnb.android.react.maps.MapsPackage; to your MainApplication.java file. 
 
-<b> PART 3 - Creating the Passenger side app 
+
+<b> PART 3 - Creating the Passenger side app</b> 
  
  STEP 1: Go ahead and create a new app: 
  ```
@@ -121,4 +122,16 @@ react-native link react-native-google-places
  npm install --save pusher-js react-native-geocoding github:geordasche/react-native-google-place-picker react-native-loading-spinner-overlay react-native-maps 
  ``` 
  
- STEP 3: 
+ 
+ STEP 3: In your AndroidManifest.xml file, request location permissions and add your API key in a meta-data tag (ensure you are within the <application> tag as follows: 
+ ```
+ <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<application
+      android:name=".MainApplication"
+      ...>
+	<meta-data
+		android:name="com.google.android.geo.API_KEY"
+		android:value="YOUR_ANDROID_API_KEY_HERE"/>
+	...
+</application> 
+ ```
