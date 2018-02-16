@@ -120,8 +120,7 @@ if not then add the sdk_path/tools and sdk_path/platform-tools to path
 react-native link react-native-google-places
 
  npm install --save pusher-js react-native-geocoding github:geordasche/react-native-google-place-picker react-native-loading-spinner-overlay react-native-maps 
- ``` 
- 
+ ```  
  
  STEP 3: In your AndroidManifest.xml file, request location permissions and add your API key in a meta-data tag (ensure you are within the <application> tag as follows: 
  ```
@@ -135,3 +134,50 @@ react-native link react-native-google-places
 	...
 </application> 
  ```
+	
+STEP 4: In the command line, run the following command: 
+```
+react-native link react-native-google-places 
+```
+
+STEP 5: open the android/app/src/main/java/com/grabClone/MainApplication.java file and add the following below the last import: 
+```
+import com.reactlibrary.RNGooglePlacePickerPackage; 
+```
+
+STEP 6: Add the library that you just imported under the getPackages() function. While you’re there, also make sure that the MapsPackage() is listed as well.
+```
+protected List<ReactPackage> getPackages() {
+      return Arrays.<ReactPackage>asList(
+          new MainReactPackage(),
+          new MapsPackage(),
+          new RNGooglePlacePickerPackage() // <- add this
+      );
+    } 
+ ``` 
+ 
+ STEP 7: Next, open the android/settings.gradle file and add these right above the include ':app' directive: 
+ ```
+ include ':react-native-google-place-picker'
+    project(':react-native-google-place-picker').projectDir = new File(rootProject.projectDir,         '../node_modules/react-native-google-place-picker/android') 
+```
+   a. While you’re there, also make sure that the resources for React Native Maps are also added: 
+   ```
+   include ':react-native-maps'
+    project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/lib/android') 
+```
+ 
+STEP 8: Next, open the android/app/build.gradle file and add the following under the dependencies: 
+```
+dependencies {
+      compile project(':react-native-google-place-picker') // <- add this
+    } 
+```
+   a. Lastly, make sure that React Native Maps is also compiled: 
+   ```
+   compile project(':react-native-maps')
+   ```
+ 
+ STEP 9: 
+
+
