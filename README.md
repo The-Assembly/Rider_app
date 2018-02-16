@@ -12,6 +12,7 @@ STEP 1: Download android studio and make sure you have the right tools needed as
  "Optional Title")  
  
  STEP 2: <b>Installing dependencies</b> </br>
+
 WINDOWS USER: </br>
 a. Open an Administrator Command Prompt (right click Command Prompt and select "Run as Administrator"), then run the following command: 
 ```
