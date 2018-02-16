@@ -86,7 +86,7 @@ import { AppRegistry } from 'react-native';
     AppRegistry.registerComponent('driver', () => App); 
  ```
 
-STEP 6: Copy the App.js file from the Driver folder and replace with the existing one (make sure to change the google maps API key). Copy the helper.js file to the grabDriver folder. 
+STEP 6: Copy the App.js file from the Driver folder and replace with the existing one (make sure to change the google maps API key). Copy the helper.js file to the driver folder. 
 
 STEP 7: Run the app using: 
 ```
@@ -133,7 +133,8 @@ react-native link react-native-google-places
  
  STEP 3: In your AndroidManifest.xml file, request location permissions and add your API key in a meta-data tag (ensure you are within the <application> tag as follows: 
  ```
- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+ <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 <application
       android:name=".MainApplication"
       ...>
@@ -165,16 +166,20 @@ protected List<ReactPackage> getPackages() {
  include ':react-native-google-place-picker'
     project(':react-native-google-place-picker').projectDir = new File(rootProject.projectDir,         '../node_modules/react-native-google-place-picker/android') 
 ```
-   a. While you’re there, also make sure that the resources for React Native Maps are also added: 
+   a. While you’re there, also make sure that the resources for React Native Maps and places are also added: 
    ```
    include ':react-native-maps'
     project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/lib/android') 
+    
+    include ':react-native-google-places'
+project(':react-native-google-places').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-google-places/android')
 ```
  
 STEP 7: Next, open the android/app/build.gradle file and add the following under the dependencies: 
 ```
 dependencies {
-      compile project(':react-native-google-place-picker') // <- add this
+      compile project(':react-native-google-place-picker') // <- add this 
+      compile project(':react-native-google-places')// <- add this 
     } 
 ```
    a. Lastly, make sure that React Native Maps is also compiled: 
@@ -184,6 +189,17 @@ dependencies {
  
  STEP 8: Start by opening the index.android.js file and replace the default code with the following:
  ```
+ import { AppRegistry } from 'react-native';
+    import App from './App';
+    AppRegistry.registerComponent('grabClone', () => App);
+ ```
  
+STEP 9: Copy the App.js file from the passenger folder and replace with the existing one (make sure to change the google maps API key). Copy the helper.js file to the passenger folder.  
+
+STEP 10: Go ahead and connect your Android device to your computer and run the following command:
+```
+react-native run-android 
+```
+
 
 
