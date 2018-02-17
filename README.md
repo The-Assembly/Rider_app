@@ -1,7 +1,6 @@
 # Rider_app
 
 Follow the steps to create a ride sharing app both for the passenger and driver. </br> 
-To view the presenation slides, click slides </br> 
 
 <b> PART 0 - Prerequisites </b>  
 
